@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- DuoTwin -</title>
+    <link rel="stylesheet" href="/scss/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />  
+</head>
+<body>
+    <div class="container">
+        <div class="form-content">
+            <div class="text-top">
+                <h1>Bem vindo ao DuoTwin</h1>
+                <h3>Encontre seu duo perfeito!</h3>
+            </div>
+    
+            <form class="form">
+                <div class="form-control">
+                    <label for="name" id="name">Nome</label>
+                    <input 
+                    type="text" 
+                    name="name"
+                    required
+                    class="inputs">
+                </div><br>
+    
+                <div class="form-control">
+                    <label for="nick" id="nick">Nick</label>
+                    <input 
+                    type="text" 
+                    name="nick"
+                    required
+                    class="inputs">
+                </div><br>
+    
+                <div class="form-control">
+                    <label for="age">Idade</label>
+                    <input 
+                    type="number"
+                    min="14"
+                    max="99"
+                    name="age" 
+                    id="age"
+                    required
+                    class="inputs">
+                </div><br>
+    
+                <div class="form-control">
+                    <label for="ranked-matches">Costuma jogar partidas ranqueadas?</label> <br>
+                    <input type="radio" name="ranked-matches" id="sim">
+                    <label for="sim">Sim</label> <br>
+    
+                    <input type="radio" name="ranked-matches" id="nao">
+                    <label for="nao">Não</label> <br>
+                </div> <br>
+    
+                <div class="form-control">
+                    <p>Qual o seu elo?</p>
+                    <select name="elo" id="elo" class="inputs">
+                        <option hidden selected>Selecione seu elo</option>
+    
+                        <option value="desafiante">Desafiante</option>
+                        <option value="grao-mestre">Grao-mestre</option>
+                        <option value="mestre">Mestre</option>
+                        <option value="diamante">Diamante</option>
+                        <option value="platina">Platina</option>
+                        <option value="ouro">Ouro</option>
+                        <option value="prata">Prata</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="ferro">Ferro</option>
+                    </select>
+                </div><br>
+    
+                <div class="form-control">
+                    <p>Qual a sua rota?</p>
+    
+                    <select name="role" id="role" class="inputs">
+                        <option hidden selected>Selecione sua rota</option>
+    
+                        <option value="top">Top</option>
+                        <option value="selva">Selva</option>
+                        <option value="mid">Mid</option>
+                        <option value="atirador">Atirador</option>
+                        <option value="suporte">Suporte</option>
+                    </select>
+                </div> <br>
+    
+                <div class="form-control">
+                    <p>Costuma usar algum aplicativo de conversa? Se sim qual?</p>
+    
+    
+                    <label for="checkbox-apps-label">Selecione quais:</label> <br>
+    
+                        <input type="checkbox" name="radio-apps" id="disc" value="Dicord">
+                        <label for="disc">Discord</label> <br>
+    
+                        <input type="checkbox" name="radio-apps" id="skype" value="skype">
+                        <label for="skype">Skype</label> <br>
+    
+                        <input type="checkbox" name="radio-apps" id="wpp" value="whatsapp">
+                        <label for="wpp">Whatsapp</label> <br>
+                </div> <br>
+    
+                <div class="submit-box">
+                    <input type="submit" name="submit" value="ENCONTRAR DUPLA" class="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
